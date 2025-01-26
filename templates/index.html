@@ -15,7 +15,7 @@
 </head>
 <style>
 	header{
-		background-image: url('images.png');
+		background-image: url('static/images/images.png');
 		background-repeat: repeat;
 	}
 	.inline-block-child {
@@ -135,11 +135,12 @@
                         blessingTable.innerHTML += row;
                         blessingCount++;
                     }
+		document.getElementById("cntr").innerTest = slNo;
                 });
 
                 document.getElementById("attending-count").innerText = attendingCount;
                 document.getElementById("blessing-count").innerText = blessingCount;
-		document.getElementById("cntr").innerTest = attendingCount;
+		
             })
             .catch(error => console.error('Error fetching guest data:', error));
     }
