@@ -38,8 +38,8 @@
 	<br>
 	<h1>బారసాల మరియు నామకరణం మహోత్సవం ఆహ్వానం</h1>
 	<div>
-    <p>The number of guests attending is: <span id="cntr">1</span>
-       The number of guests blessing is: <span id="cntr1">1</span></p>
+    <p>The number of guests attending is: <span id="cntr">1</span></p>
+<!--        The number of guests blessing is: <span id="cntr1">1</span></p> -->
   </div>
 </header>
 <body>
@@ -102,7 +102,7 @@
 </section>
 
 <footer>
-    <p>Developed by Bharadwaj</p>
+	<marquee behavior="scroll" direction="left">Developed by Bharadwaj</marquee>
 </footer>
 
 <script>
@@ -139,6 +139,7 @@
 
                 document.getElementById("attending-count").innerText = attendingCount;
                 document.getElementById("blessing-count").innerText = blessingCount;
+		document.getElementById("cntr").innerTest = attendingCount;
             })
             .catch(error => console.error('Error fetching guest data:', error));
     }
