@@ -135,9 +135,11 @@
                         blessingTable.innerHTML += row;
                         blessingCount++;
                     }
-		document.getElementById("cntr").innerTest = slNo;
+		 
                 });
-
+		    // var table = document.getElementById("attending-table");
+		    // document.getElementById("cntr").innerText = table.rows.length;
+		    document.getElementById("cntr").innerText = attendingCount + blessingCount;
                 document.getElementById("attending-count").innerText = attendingCount;
                 document.getElementById("blessing-count").innerText = blessingCount;
 		
